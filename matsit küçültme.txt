@@ -1,0 +1,36 @@
+import random
+n=int(input("kaça kaçlık matris olsun"))
+m=int(input("yeni matrisimiz kaça kaçlık olsun"))
+
+if n%2!=0:
+    n-=1
+l1=[]
+for i in range(n):
+    l2=[]
+    for j in range(n):
+        x=random.randint(1,10)
+        l2.append(x)
+    l1.append(l2)
+
+for k in l1:
+    print(k)
+
+print(10*"*")
+
+ly2=[]
+for a in range(m):
+    f = 0
+    ly1 = []
+    for b in range(m):
+        top = 0
+        h=0
+        for c in range(n//m):
+            for d in range(n//m):
+                top += l1[c+a*(n//m)][d+f]
+                h+=1
+        ly1.append(top//h)
+        f+=n//m
+    ly2.append(ly1)
+    
+for q in ly2:
+    print(q)
