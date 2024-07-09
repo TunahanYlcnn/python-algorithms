@@ -1,0 +1,22 @@
+while True:
+    a=input("elektrik var mı?")
+    if a=="evet":
+        print("teknik servise başvurun bilgisayar arızalı")
+        break
+    elif a=="hayır":
+        b=input("fişe takılı mı?")
+        if b=="hayır":
+            print("fişe takın")
+            continue
+        elif b=="evet":
+            c=input("açma düğmesine bastınız mı?")
+            if c=="hayır":
+                print("düğmesine basınız")
+                continue
+            elif c=="evet":
+                d=input("sigorta atmış mı?")
+                if d=="evet":
+                    print("teknik servise başvurun bilgisayar arızalı")
+                    break
+                elif d=="hayır":
+                    print("şarteli kontrol edin")

@@ -1,0 +1,61 @@
+
+liste=[]
+while True:
+      print("YAPIALCAK LİSTESİ")
+      secim=int(input("1-görev ekleme \n2-görev çıkartma \n3-yapıldı diye işaretleme \n4-programı kapatmak için \nne yapmak istiyorsunuz"))
+      list=[]
+      if secim==1:
+            a = input("ne görevi ekleyeceksiniz")
+            liste.append(a)
+
+      if secim==2:
+            lst = input("listeyi görmek istiyormusunuz(e-h)")
+            if lst == "e":
+                  for indeks, eleman in enumerate(liste, start=1):
+                        print(f"{indeks}-{eleman}")
+            cıkart = int(input("hangi numaralı görevi çıkartmak istiyorssunuz:"))
+            liste.pop(cıkart-1)
+
+      if secim==3:
+            lst = input("listeyi görmek istiyormusunuz(e-h)")
+            if lst == "e":
+                  for indeks, eleman in enumerate(liste, start=1):
+                        print(f"{indeks}-{eleman}")
+            yapıldı=int(input("hangi görev yapıldı:"))
+            liste[yapıldı-1]=str(liste[yapıldı-1]+str(" (yapıldı)"))
+
+      if secim==4:
+            break
+
+
+
+print()
+print("son listemiz")
+
+for indeks, eleman in enumerate(liste, start=1):
+      print(f"{indeks}-{eleman}")
+
+
+print("iyi günler")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

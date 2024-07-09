@@ -1,0 +1,7 @@
+n=int(input("syaı"))
+ç=1
+while n>1:
+    a=n%10
+    ç*=a
+    n=n//10
+print(ç)

@@ -1,0 +1,16 @@
+
+import random
+x=random.randint(1,10)
+print("0 ile programdan çıkabilirsiniz")
+n=int(input("1 ile 10 arasında bi sayı tuttum tahmin et:"))
+s=1
+while n!=0:
+    if n<x:
+        print("daha büyük sayı giriniz")
+    elif n>x:
+        print("daha küçük sayı giriniz")
+    if x == n:
+        print(f"{s} defada buldunuz kazandınız")
+        break
+    s+=1
+    n=int(input("1 ile 10 arasında bi sayı tuttum tahmin et:"))

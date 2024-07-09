@@ -1,0 +1,10 @@
+a=[1,4,5,1,8,7,8,9,2,8,5,4,3,7,6]
+for i in range(len(a)):
+    tmp=a[i]
+    while tmp<a[i-1] and i>0:
+        a[i]=a[i-1]
+        i-=1
+    a[i]=tmp
+
+
+print(a)

@@ -1,0 +1,8 @@
+N = int(input("Bir pozitif tamsayı girin: "))
+x = 2
+while N > 1:
+    if  N % x == 0:
+        print(x, end=" ")
+        while N % x == 0 :
+            N = N / x
+    x += 1
