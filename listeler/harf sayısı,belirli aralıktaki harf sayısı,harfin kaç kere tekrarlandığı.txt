@@ -1,0 +1,18 @@
+print("Burada bir cümle var.")
+cümle="Burada bir cümle var."
+#a harfi kaç tane bulmak için aşağıdaki işlem yapılır:
+print("'a' harfi sayısı: ",cümle.count("a"))
+#Örneğin 6. karakterden sonra kaç tane a harfi var öğrenmek için:
+print("6. karakterden sonraki 'a' harfi sayısı: ",cümle.count("a",6))
+#Eğer 4. harf ile 8. harf arasında kaç tane a harfi olduğunu bulmak isterseniz aşağıdaki gibi bir parametre daha girebilirsiniz.
+print("4. karakter ile 8 karakter arasındaki 'a' harfi sayısı: ",cümle.count("a",6))
+
+########################################################################################################################
+#Aşağıdaki örneği dikkatlice inceleyin.
+#Bu örnekte bir kelime girilecek ve girilen kelime içerisinde hangi harften kaç tane olduğunu verecektir.
+kelime = input("Herhangi bir kelime: ")
+tüm_harfler=""
+for harf in kelime:
+    if not harf in tüm_harfler:
+        tüm_harfler+=harf#Burada yer alan tüm_harfler ifadesi bir harfin iki defa tekrar etmesini engellemektir. Bu satırı silip bir daha çalıştırabilirsiniz.
+        print("{} -------> {} kelimesinde {} kez geçiyor!".format(harf, kelime, kelime.count(harf)))

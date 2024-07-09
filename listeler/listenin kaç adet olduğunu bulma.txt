@@ -1,0 +1,3 @@
+list1 = ['T', 'A', 'S', 'A', 'R', 'I', 'M']
+adet = list1.count("S")
+print(adet)

@@ -1,0 +1,6 @@
+isim=input("isim")
+uzunluk=len(isim)
+ters=""
+for i in range(uzunluk-1,-1,-1):
+    ters+=isim[i]
+print(ters)
