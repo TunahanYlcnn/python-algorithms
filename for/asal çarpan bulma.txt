@@ -1,0 +1,8 @@
+asal_mı = lambda x: [False for i in range(2,x-1) if x % i == 0] 
+asallari_bul = lambda x: [i for i in range(2, x+1) if (x %i==0 and asal_mı(i)==[])]
+a = [print(i) for i in asallari_bul(int(input("Sayıyı giriniz: ")))]
+
+def asal_mi(x):
+    if x%2!=0 and x%3!=0 and x%5!=0:
+        return True
+

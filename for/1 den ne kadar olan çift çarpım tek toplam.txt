@@ -1,0 +1,10 @@
+#100 kadar sayıların çift olanları topla tek olanları çarp
+çç=1
+tt=0
+n=int(input("kaça kadar olsun:"))
+for i in range(1,n+1):
+    if i%2==0:
+        çç*=i
+    else:
+        tt+=i
+print("çift sayıların çarpımı",çç, "\ntek sayıların toplamı:",tt)

@@ -1,0 +1,5 @@
+t=0
+for i in range(10):
+    n=int(input("10 tane sayı gir"))
+    t+=n
+print(t)

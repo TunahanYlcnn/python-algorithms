@@ -1,0 +1,5 @@
+satir = int(input("üçgen satır sayısını giriniz"))
+sayac = satir
+for sayi in range(1, satir + 1):
+    print(sayac * " ", (2 * sayi - 1) * "*")
+    sayac -= 1

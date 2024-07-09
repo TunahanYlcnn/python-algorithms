@@ -1,0 +1,8 @@
+s1=int(input("sayı giriniz:"))
+s2=int(input("sayı giriniz:"))
+
+for i in range(1,(s1*s2)+1):
+    if i%s1==0 and i%s2==0:
+        break
+
+print(i)

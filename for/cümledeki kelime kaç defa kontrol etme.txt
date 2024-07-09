@@ -1,0 +1,8 @@
+cumle=input("cümle giriniz")
+harf=input("hangi harfe bakalım")
+sayac=0
+for i in range(len(cumle)):
+    if cumle[i]==harf:
+        sayac+=1
+
+print(sayac)

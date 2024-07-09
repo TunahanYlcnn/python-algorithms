@@ -1,0 +1,9 @@
+x=int(input("sayı gir:"))
+b=0
+for i in range(1,x//2):
+    if i*(i+1)==x:
+        b+=1
+if b==1:
+    print("pronic")
+else:
+    print("değil amcuk")
