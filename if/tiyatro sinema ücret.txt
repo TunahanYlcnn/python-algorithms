@@ -1,0 +1,9 @@
+n=int(input("tiyatro için 1e sinema için 2ye basınız:"))
+m=input("öğrenci misiniz:")
+if n==1:
+    ucret=20
+if n==2:
+    ucret=40
+if m=="E" or m=="e":
+    ucret/=2
+print("ödemeniz gereken ucret {}".format(ucret))

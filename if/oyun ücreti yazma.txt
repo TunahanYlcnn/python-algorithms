@@ -1,0 +1,13 @@
+n=input("hangi oyunu almak istersiniz:")
+if n=="csgo":
+    a=int(input("hangi versiyon istersiniz:"))
+    if a==1 or a==2:
+        ucret=30
+    elif a==3:
+        ucret=40
+if n=="garrys mod":
+    ucret=15
+if n=="euro truck":
+    print("1. ve 2. versiyonu bulunmaktadır")
+    ucret = 20
+print("ödenemeniz gereken ücret {}".format(ucret))
