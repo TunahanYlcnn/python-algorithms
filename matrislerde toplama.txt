@@ -1,0 +1,20 @@
+import random
+x=int(input("kaça kaçlık matris olsun"))
+matris=[]
+for a in range(x):
+    list=[]
+    for b in range(x):
+        c=random.randint(1,100)
+        list.append(c)
+    matris.append(list)
+for d in range(len(matris)):
+    print(d)
+
+for e in range(len(matris)):
+    tsatır=0
+    tsutun=0
+    for f in range(len(matris)):
+        tsatır+=matris[e][f]
+        tsutun+=matris[f][e]
+    print("sutun toplamı=",tsutun)
+    print("satır toplamı=",tsatır)
