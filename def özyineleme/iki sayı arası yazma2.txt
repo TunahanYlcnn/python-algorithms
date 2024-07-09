@@ -1,0 +1,15 @@
+def yazma(x,y):
+    if x==y:
+        return
+    if x>y:
+        if x==y:
+            return
+        else:
+            print(x)
+            return yazma(x-1,y)
+    else:
+        print(x)
+        return yazma(x+1,y)
+
+yazma(18,13)
+yazma(10,15)

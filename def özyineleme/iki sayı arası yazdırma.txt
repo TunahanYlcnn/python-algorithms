@@ -1,0 +1,7 @@
+def arasi(n, m, artis_miktari):
+    if n >= m:
+        return []
+    else:
+        return [n] + arasi(n+artis_miktari, m, artis_miktari)
+
+print(arasi(5,10,1))

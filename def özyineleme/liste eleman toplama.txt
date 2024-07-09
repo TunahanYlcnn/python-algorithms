@@ -1,0 +1,11 @@
+def toplam(liste):
+    if len(liste)==1:
+        return liste[0]
+    else:
+        return liste[0]+toplam(liste[1:])
+
+x=int(input("kaç elemanlı olsun"))
+liste=[]
+for i in range(x):
+    a=int(input("sayı giriniz"))
+    liste.append(a)

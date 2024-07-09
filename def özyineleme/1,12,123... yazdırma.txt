@@ -1,0 +1,20 @@
+def yazma(x,y):
+    if x==y:
+        return ""
+    if x>y:
+        if x==y:
+            return 
+        else:
+            print(x)
+            return yazma(x-1,y)
+    else:
+        print(x,end="")
+        return yazma(x+1,y)
+def sayma(a,sayac,b):
+    if sayac==10:
+        return " "
+    else:
+        print(yazma(a,b))
+        return sayma(a,sayac+1,b+1)
+
+sayma(1,0,2)
