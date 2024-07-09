@@ -1,0 +1,21 @@
+def güçlü(a):
+    top=0
+    while a>0:
+        b=a%10
+        top+=fak(b)
+        a=a//10
+    return top
+
+def fak(q):
+    ç=1
+    for i in range(1,q+1):
+        ç*=i
+    return ç
+
+x=int(input("sayı giriniz"))
+y=x
+
+if x==güçlü(x):
+    print("güçlü sayı")
+else:
+    print("değil")

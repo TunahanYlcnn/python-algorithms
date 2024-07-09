@@ -1,0 +1,6 @@
+a=int(input("kısa kenarı kaç olsun"))
+b=int(input("uzun kenarı kaç olsun"))
+def alan(a,b):
+    print("dikdörtgen alanı=",a*b)
+
+alan(a,b)

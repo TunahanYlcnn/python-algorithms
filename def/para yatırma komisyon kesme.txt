@@ -1,0 +1,17 @@
+bakiye=0
+
+def komisyonAl(yatirilanPara):
+  komisyon=yatirilanPara/100
+  kalanPara=yatirilanPara-komisyon
+  print("{} tl komisyon alınmıştır".format(komisyon))
+  return kalanPara
+
+def paraYatir(para):
+  global bakiye
+  print("Para girişi : {} TL".format(para))
+  netPara=komisyonAl(para)
+  bakiye+=netPara
+  print("yatırılan para : {} ".format(netPara))
+
+
+paraYatir(1000)

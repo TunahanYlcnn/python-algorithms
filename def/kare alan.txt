@@ -1,0 +1,4 @@
+def alan(a):
+    return(a**2)
+x=alan(4)
+print(x)

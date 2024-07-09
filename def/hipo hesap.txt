@@ -1,0 +1,6 @@
+def hipohesap(a,b):
+    print("hipotenüs=",(a*a+b*b)**(1/2))
+
+x=int(input("kenar giriniz"))
+y=int(input("kenar giriniz"))
+hipohesap(x,y)

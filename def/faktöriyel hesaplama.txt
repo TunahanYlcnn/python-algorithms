@@ -1,0 +1,12 @@
+def fak(a):
+    ç=1
+    for i in range(1,a):
+        ç*=i
+        if ç==a:
+            print(a,"sayısı=",i,"! faktöriyel")
+    else:
+        print("faktöriyeli yok")
+
+x=int(input("sayı giriniz"))
+
+fak(x)

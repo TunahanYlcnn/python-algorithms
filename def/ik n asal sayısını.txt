@@ -1,0 +1,15 @@
+def asalmı(a):
+    asal=1
+    for i in range(2,a):
+        if a%i==0:
+            asal=0
+            break
+    return asal
+x=int(input("kaç tane asal olsun:"))
+c=0
+n=2
+while c<x:
+    if asalmı(n)==1:
+        print(n)
+        c+=1
+    n+=1

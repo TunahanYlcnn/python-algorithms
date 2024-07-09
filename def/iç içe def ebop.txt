@@ -1,0 +1,14 @@
+def sayılar(s1,s2):
+    min=s1 if s1<s2 else s2
+    ebop=1
+    for i in range(1,min+1):
+        if s1%i==0 and s2%i==0:
+            ebop=i
+    return ebop
+def istemek():
+    return int(input("sayı giriniz:"))
+def main():
+    s1=istemek()
+    s2=istemek()
+    print(s1,",",s2," sayılarının ortak böleni=",sayılar(s1,s2),sep="")
+main()
